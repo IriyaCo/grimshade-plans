@@ -1,3 +1,4 @@
+
 import PricingCard from "@/components/PricingCard";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -89,9 +90,11 @@ const Index = () => {
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
             Профессиональные утилиты для геймеров. Анализируй, оптимизируй и доминируй в любой игре
           </p>
-          <Button variant="premium" size="lg" className="text-lg px-8 py-4">
-            Начать использовать
-            <ArrowRight className="ml-2 w-5 h-5" />
+          <Button variant="premium" size="lg" className="text-lg px-8 py-4" asChild>
+            <a href="#">
+              Начать использовать
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </a>
           </Button>
         </div>
       </section>
@@ -147,11 +150,11 @@ const Index = () => {
               Присоединяйтесь к тысячам игроков, которые уже используют наши инструменты
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="premium" size="lg">
-                Попробовать бесплатно
+              <Button variant="premium" size="lg" asChild>
+                <a href="#">Попробовать бесплатно</a>
               </Button>
-              <Button variant="outline" size="lg">
-                Узнать больше
+              <Button variant="outline" size="lg" asChild>
+                <a href="#">Узнать больше</a>
               </Button>
             </div>
           </Card>

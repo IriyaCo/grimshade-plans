@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Check } from "lucide-react";
@@ -54,8 +55,9 @@ const PricingCard = ({ plan }: PricingCardProps) => {
           variant={plan.buttonVariant || "default"}
           className="w-full"
           size="lg"
+          asChild
         >
-          Выбрать план
+          <a href="#">Выбрать план</a>
         </Button>
       </div>
     </Card>
